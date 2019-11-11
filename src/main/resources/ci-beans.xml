@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="engine" class="duke.learn.lesson03.di.ci.xml.Engine">
+		<constructor-arg index="0" value="8"></constructor-arg>
+		<constructor-arg index="1" value="V8"></constructor-arg>
+	</bean>
+
+	<bean id="transmission" class="duke.learn.lesson03.di.ci.xml.Transmission">
+		<constructor-arg index="0" value="6 Speed Sliding"></constructor-arg>
+	</bean>
+
+	<bean id="audi" class="duke.learn.lesson03.di.ci.xml.Car">
+		<constructor-arg name="engine" ref="engine"></constructor-arg>
+		<constructor-arg name="transmission"
+			ref="transmission"></constructor-arg>
+	</bean>
+
+
+</beans>

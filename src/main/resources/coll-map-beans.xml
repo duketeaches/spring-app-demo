@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="india"
+		class="duke.learn.lesson07.di.ci.collection.map.xml.Country">
+		<constructor-arg>
+			<map>
+				<entry key="West Bengal" value="100"></entry>
+				<entry key="Karnataka" value="90"></entry>
+				<entry key="Andhra Pradesh" value="60"></entry>
+			</map>
+		</constructor-arg>
+	</bean>
+
+
+</beans>

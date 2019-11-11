@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package duke.learn.lesson03.di.ci.xml;
+
+/**
+ * @author Kazi
+ *
+ */
+public class Car {
+
+    private Engine engine;
+    private Transmission transmission;
+
+    /**
+     * @param engine
+     * @param transmission
+     */
+    public Car(Engine engine, Transmission transmission) {
+	super();
+	this.engine = engine;
+	this.transmission = transmission;
+    }
+
+    public String getCarDetails() {
+	return engine.checkEngine() + " with " + transmission.checkTranmission();
+    }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="engine" class="duke.learn.lesson12.di.si.dependent.xml.Engine">
+		<property name="cylinders" value="8"></property>
+		<property name="allignment" value="V8"></property>
+	</bean>
+
+	<bean id="transmission"
+		class="duke.learn.lesson12.di.si.dependent.xml.Transmission">
+		<property name="type" value="6 Speed Sliding"></property>
+	</bean>
+
+	<bean id="audi" class="duke.learn.lesson12.di.si.dependent.xml.Car">
+		<property name="engine" ref="engine"></property>
+		<property name="transmission" ref="transmission"></property>
+
+	</bean>
+
+
+</beans>

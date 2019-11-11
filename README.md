@@ -1,2 +1,2 @@
 # spring-app-demo
-A small spring application with jdbc template
+A small spring application explaining the core concepts of spring framework.
